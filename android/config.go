@@ -845,3 +845,15 @@ func stringSlice(s *[]string) []string {
 		return nil
 	}
 }
+
+func (c *deviceConfig) QTIAudioPath() string {
+	return String(c.config.productVariables.Reloaded.QTIAudioPath)
+}
+
+func (c *deviceConfig) QTIDisplayPath() string {
+	return String(c.config.productVariables.Reloaded.QTIDisplayPath)
+}
+
+func (c *deviceConfig) QTIMediaPath() string {
+	return String(c.config.productVariables.Reloaded.QTIMediaPath)
+}
