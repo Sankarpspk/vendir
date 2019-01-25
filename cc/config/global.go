@@ -331,8 +331,8 @@ func useSdclang() bool {
 		// Parse the config file
 		if err := decoder.Decode(&varConfig); err == nil {
 			config := varConfig.(map[string]interface{})
-			// Retrieve the Reloaded block
-			if dev, ok := config["Reloaded"]; ok {
+			// Retrieve the Future block
+			if dev, ok := config["Future"]; ok {
 				devConfig := dev.(map[string]interface{})
 				// Get value of TARGET_USE_SDCLANG
 				if _, ok := devConfig["Target_use_sdclang"]; ok {

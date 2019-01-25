@@ -20,7 +20,7 @@ import (
 	"runtime"
 	"strings"
 
-	"reloaded/soong/android"
+	"future/soong/android"
 
 	"github.com/google/blueprint/proptools"
 )
@@ -127,8 +127,8 @@ type variableProperties struct {
 			Cflags []string
 		}
 
-		// include Reloaded variables
-		Reloaded android.Product_variables
+		// include Future variables
+		Future android.Product_variables
 	} `android:"arch_variant"`
 }
 
@@ -248,8 +248,8 @@ type productVariables struct {
 
 	VendorVars map[string]map[string]string `json:",omitempty"`
 
-	// include Reloaded variables
-	Reloaded android.ProductVariables
+	// include Future variables
+	Future android.ProductVariables
 }
 
 func boolPtr(v bool) *bool {
